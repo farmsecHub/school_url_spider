@@ -50,7 +50,6 @@ def get_school_url(headers):
                     pass
                 else:
                     target_url = str(tag.get('href'))
-                    print "[+]正在抓取....."
                     #print target_url
                     with open('/opt/url.txt','at') as f:
                         f.write(target_url+'\n')
